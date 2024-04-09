@@ -10,7 +10,7 @@ df=pd.read_csv("Titanic-Dataset.csv",)
 #Preprocessing our data
 df['Age'].fillna(df['Age'].mean(),inplace=True)
 df.replace({'Sex':{'male': 1,'female':0}},inplace=True)
-df['Cabin']=df.Cabin.fillna('G6')
+df['Cabin']=df.Cabin.fillna('G10')
 df.replace({'Survived':{1:'Yes',0:'No'}},inplace=True)
 
 
